@@ -1,6 +1,6 @@
 function Menu(datas) {
 
-    var node = document.body.appendChild(createMenu(datas.list));
+    var node = document.body.appendChild(createMenu(datas.menu));
     // 禁止右击事件
     datas.el.setAttribute('oncontextmenu', 'return false');
     // 绑定事件
