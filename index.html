@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>右键菜单demo</title>
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        #div1,
+        #div2 {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1"></div>
+    <hr>
+    <div id="div2"></div>
+
+    <script src="menu.js"></script>
+    <script>
+        // 定义右键菜单
+        var menu1 = new Menu({
+            el: div1,
+            list: [{
+                    name: '保存',
+                    callback: function() {
+                        div1.innerText = '保存';
+                    }
+                },
+                {
+                    name: '另存为',
+                    callback: function() {
+                        div1.innerText = '另存为';
+                    }
+                },
+                {
+                    name: '放弃此次修改',
+                    callback: function() {
+                        div1.innerText = '放弃此次修改';
+                    }
+                },
+                {
+                    name: '设置',
+                    menu: [{
+                            name: '首选项',
+                            callback: function() {
+                                div1.innerText = '首选项';
+                            }
+                        },
+                        {
+                            name: '快捷键',
+                            callback: function() {
+                                div1.innerText = '快捷键';
+                            }
+                        }
+                    ]
+                }
+            ]
+        });
+
+        var menu2 = new Menu({
+            el: div2,
+            list: [{
+                name: '刷新页面',
+                callback: function() {
+                    location.reload();
+                }
+            }]
+        });
+        
+    </script>
+</body>
+
+</html>
