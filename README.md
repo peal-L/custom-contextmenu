@@ -1,10 +1,10 @@
-# custom-contextmenu
+# 自定义右键菜单
 
 [#项目仓库](https://github.com/peal-L/custom-contextmenu)
 
 简单易用的自定义右键菜单，原生JS编写无需引入任何库，完美兼容至IE8；可根据需要设置多个右键菜单，每个菜单下也可以进行嵌套。
 
-![image](http://up.wawa.fm/20,0607400e744e57)
+[![cotyi8.jpg](https://z3.ax1x.com/2021/04/19/cotyi8.jpg)](https://imgtu.com/i/cotyi8)
 
 首先要引入样式文件和JS文件
 
